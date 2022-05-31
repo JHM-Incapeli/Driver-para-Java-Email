@@ -1,5 +1,7 @@
-///////////////////////////////////////////////////////
--Para enviar mensajes solo se necesita estas dos librerias
+
+*******************************************************
+
+
 
 -La contraseña de 16 digitos es generada por google al activar la verificación de dos pasos
 	PASOS:
@@ -9,17 +11,15 @@
 	3) visualizas dos opciones contraseña para un dispositivo o aplicación(app) eliges app	
 	4) Disfruta 
 
- 
+-Para enviar mensajes solo se necesita estas dos librerias
 
-javax.activation-1.1.0.v201105071233.jar
-mail.jar
-
-
+----javax.activation-1.1.0.v201105071233.jar
+----mail.jar
 
 codigo:
 
-///// 
-	de
+ 
+	    //de
         String correo = "Correo_que_envia_el_mensaje@gmail.com";
         String contra = "Contraseña de 16 digitos";
         
@@ -28,6 +28,7 @@ codigo:
         String destinatario = txtResive.getText();
         String Asunto = txtAsunto.getText();
         String contenido = txtConteneido.getText();
+
         try {
             Properties p = new Properties();
             p.put("mail.smtp.host", "smtp.gmail.com");
